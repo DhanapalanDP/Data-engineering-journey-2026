@@ -73,11 +73,6 @@ The first item is [0], the second item is [1], the third is [2].
 
 Example: print(my_favorite_foods[1]) will print "Dosa".
 
-3. Why Data Engineers Use Them
-
-We use lists to store massive amounts of related data so we don't have to create thousands of individual variables.
-
-Example: Storing a list of 50 different database table names so we can tell Python to process them all at once.
 Assuming we start with a basic list: data = [10, 20, 30]
 
 Create: data = [10, 20, 30] (Builds a list of multiple items inside square brackets).
@@ -92,7 +87,7 @@ Add (Append): data.append(40) (Sticks a new item on the end: [10, 25, 30, 40]).
 
 Count (Len): len(data) (Returns the total number of items inside the list: 4).
 
-Slice: data[0:2] (Grabs a chunk from index 0 up to 2: [10, 25]).
+Slice: data[0:2] (Grabs a chunk from index 0 up to 2: [10, 25]). [start : end] start is inclusive and end is exclusive.
 
 Delete by Value: data.remove(25) (Finds the exact value 25 and deletes it).
 
