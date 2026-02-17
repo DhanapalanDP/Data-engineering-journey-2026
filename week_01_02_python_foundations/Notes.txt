@@ -1,1 +1,25 @@
+Core Characteristics of Python:
 
+General Purpose: It is a general-purpose programming language, meaning you can use it to build almost anything.
+
+Open Source: It is completely free to use.
+
+Packages: It has a massive ecosystem of "packages" (pre-written code), which makes it heavily used for Data Science and many other application fields.
+
+Two Ways to Use Python:
+
+IPython (Interactive Python): * Created by Fernando Perez.
+
+It is part of the broader Jupyter ecosystem.
+
+Best for: Quick experimentation and testing small ideas on the fly.
+
+Python Scripts: * These are standard text files saved with a .py extension.
+
+They contain a list of Python commands (similar to what you would type in the IPython shell, but saved permanently).
+
+Best for: Writing actual, reusable answers in DataCamp (and writing real-world pipelines).
+
+The Data Engineer's Definition:
+
+"Python is a readable, English-like programming language that Data Engineers use to build the automated pipelines that extract, clean, and move data between different systems."
