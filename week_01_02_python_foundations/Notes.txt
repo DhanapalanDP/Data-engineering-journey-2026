@@ -23,3 +23,32 @@ Best for: Writing actual, reusable answers in DataCamp (and writing real-world p
 The Data Engineer's Definition:
 
 "Python is a readable, English-like programming language that Data Engineers use to build the automated pipelines that extract, clean, and move data between different systems."
+📦 Variables & Data Types
+1. Variables (The Pointers)
+A variable is a named pointer that holds a piece of data in the computer's memory.
+
+You create one by assigning a value using the = sign.
+
+Python uses Dynamic Typing: You don't have to declare the type upfront.
+
+Example: record_id = 101
+
+2. The 4 Core Data Types
+
+Integer (int): Whole numbers. Used for counting items (e.g., row_count = 500).
+
+Float (float): Decimal numbers. Used for precise measurements or currency (e.g., temperature = 98.6).
+
+String (str): Text data. Must always be wrapped in quotation marks (e.g., status = "active").
+
+Boolean (bool): Logical switches that are only ever True or False (e.g., is_clean = True).
+
+3. Type Casting (Data Conversion)
+
+The process of changing data from one type to another.
+
+When extracting raw data from APIs or CSVs, numbers often arrive as Strings. You must "cast" them before doing math.
+
+Example: clean_price = float("45.99")
+
+Pro-tip: If you are ever confused by a variable, print type(variable_name) to see exactly what it is.
