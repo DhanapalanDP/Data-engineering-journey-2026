@@ -11,3 +11,6 @@ Orchestration: Apache Airflow
 Warehousing & Transformations: Snowflake, dbt
 
 Big Data: PySpark
+
+📂 Repository Contents
+This repository contains my daily code snippets, pipeline scripts, and hands-on projects organized by week.
