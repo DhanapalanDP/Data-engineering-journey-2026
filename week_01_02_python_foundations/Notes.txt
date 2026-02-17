@@ -52,3 +52,56 @@ When extracting raw data from APIs or CSVs, numbers often arrive as Strings. You
 Example: clean_price = float("45.99")
 
 Pro-tip: If you are ever confused by a variable, print type(variable_name) to see exactly what it is.
+🚂 Python Lists (The Cargo Train)
+1. What is a List?
+
+A List is a single variable that can hold multiple pieces of data at the same time in a specific order.
+
+Think of it as a long train: one train, but many individual cargo cars.
+
+You build them using square brackets [] and separate each item with a comma.
+
+Example: my_favorite_foods = ["Pizza", "Dosa", "Ice Cream"]
+
+2. The Zero-Indexing Rule
+
+To pull a specific item out of the list, you have to tell Python exactly which "car" to look inside.
+
+Important: Computers always start counting at 0, not 1!
+
+The first item is [0], the second item is [1], the third is [2].
+
+Example: print(my_favorite_foods[1]) will print "Dosa".
+
+3. Why Data Engineers Use Them
+
+We use lists to store massive amounts of related data so we don't have to create thousands of individual variables.
+
+Example: Storing a list of 50 different database table names so we can tell Python to process them all at once.
+Assuming we start with a basic list: data = [10, 20, 30]
+
+Create: data = [10, 20, 30] (Builds a list of multiple items inside square brackets).
+
+Access: data[0] (Extracts the 1st item using zero-indexing: 10).
+
+Last Item: data[-1] (Extracts the very last item using negative counting: 30).
+
+Modify: data[1] = 25 (Changes the 2nd item; the list is now [10, 25, 30]).
+
+Add (Append): data.append(40) (Sticks a new item on the end: [10, 25, 30, 40]).
+
+Count (Len): len(data) (Returns the total number of items inside the list: 4).
+
+Slice: data[0:2] (Grabs a chunk from index 0 up to 2: [10, 25]).
+
+Delete by Value: data.remove(25) (Finds the exact value 25 and deletes it).
+
+Delete by Index: del data[0] (Deletes whatever item is sitting in the 0 slot).
+
+Sort: data.sort() (Permanently organizes the list from smallest to largest).
+
+Merge: [1, 2] + [3, 4] (Glues two lists together into one: [1, 2, 3, 4]).
+
+Sublist (2D): table = [[1, 2], [3, 4]] (Creates a nested list, representing rows and columns).
+
+Read Sublist: table[1][0] (Grabs the 2nd row [1], then grabs its 1st item [0]: 3).
