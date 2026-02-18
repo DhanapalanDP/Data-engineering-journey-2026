@@ -83,7 +83,7 @@ Last Item: data[-1] (Extracts the very last item using negative counting: 30).
 
 Modify: data[1] = 25 (Changes the 2nd item; the list is now [10, 25, 30]).
 
-Add (Append): data.append(40) (Sticks a new item on the end: [10, 25, 30, 40]).
+Add (Append): data.append(40) (Sticks a new item on the end: [10, 25, 30, 40]). we can use + as well. data = data + [40]
 
 Count (Len): len(data) (Returns the total number of items inside the list: 4).
 
