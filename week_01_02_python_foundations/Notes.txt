@@ -98,5 +98,81 @@ Sort: data.sort() (Permanently organizes the list from smallest to largest).
 Merge: [1, 2] + [3, 4] (Glues two lists together into one: [1, 2, 3, 4]).
 
 Sublist (2D): table = [[1, 2], [3, 4]] (Creates a nested list, representing rows and columns).
-
 Read Sublist: table[1][0] (Grabs the 2nd row [1], then grabs its 1st item [0]: 3).
+
+🐍 Python Learning Notes: Functions, Methods, and Packages
+1. Functions (Building Magic Machines)
+Functions let you write a chunk of code once and use it over and over again without re-typing it.
+
+Defining a function: Use the def keyword to build the machine.
+
+Inputs/Arguments: The ingredients you pass into the function inside the parentheses ().
+
+Return: The return keyword gives the final result back to you.
+
+Python
+def make_juice(fruit):
+    yummy_drink = fruit + " juice"
+    return yummy_drink
+
+# Calling the function to use it!
+my_cup = make_juice("Apple") 
+2. Built-in Functions (Free Tools)
+Python comes with a toolbox of pre-built functions you can use instantly.
+
+print(): Shouts text onto the screen.
+
+len(): Tells you the length (number of items) of a word or list.
+
+max() / min(): Finds the highest or lowest number in a group.
+
+input(): Asks the user a question and waits for them to type an answer.
+
+sorted(): Sorts a list in alphabetical or numerical order.
+
+Note: It creates a copy and doesn't destroy the original list.
+
+Power-up: Use sorted(list, reverse=True) to sort backward!
+
+3. Getting Help & Exploring
+If you ever forget how a tool works, Python has built-in librarians.
+
+help(): Pass a tool into it (like help(len)) to read the instruction manual.
+
+dir(): Acts like X-ray glasses. Pass an object into it (like a string or list) to see a giant list of all the hidden tools (methods) it has.
+
+4. Objects and Methods
+In Python, everything is an object, and objects have specific methods associated with them depending on their type. A method is a special trick that belongs only to a specific type of object. You use a dot (.) to call it.
+
+String Methods: A string object like sister has a .replace() method. Example: sister.replace("z", "sa"). Another example is .upper() to make words uppercase.
+
+List Methods: A list like fam does not have a .replace() method, and trying to use it will give an AttributeError. However, lists have their own tricks, like .append(), which adds a new item to the very end of the list.
+
+5. Packages (Expansion Packs)
+Functions and methods are powerful, but Python doesn't include all code in its main distribution. If it did, the code base would be huge and messy, it would include lots of code you won't ever use, and it would cause a maintenance problem. Instead, extra tools are kept in packages.
+
+Installing Packages using pip
+Before importing a third-party package, you must install it using the terminal:
+
+Go to https://pip.pypa.io/en/stable/installation/.
+
+Download the get-pip.py file.
+
+Open your terminal and run: python3 get-pip.py to set up pip.
+
+Install your package: pip3 install numpy.
+
+Ways to Import Packages
+Bring the whole box: import math (Must use the dot: math.sqrt())
+
+Grab just one tool: from math import sqrt (Use directly: sqrt())
+
+The Nickname Trick: import numpy as np (Use the short name: np.array())
+
+6. Python Lists vs. Arrays (NumPy)
+Both hold items in a row, but they act differently:
+
+Python Lists ([]): Like a magic backpack. They can mix different data types together (words, numbers, booleans) but are slower for heavy math.
+
+Arrays (using NumPy): Like a strict collector's case. They only hold one type of data (usually numbers) but are lightning-fast and take up less memory.
+
