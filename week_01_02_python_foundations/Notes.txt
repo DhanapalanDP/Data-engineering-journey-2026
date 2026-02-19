@@ -176,3 +176,51 @@ Python Lists ([]): Like a magic backpack. They can mix different data types toge
 
 Arrays (using NumPy): Like a strict collector's case. They only hold one type of data (usually numbers) but are lightning-fast and take up less memory.
 
+NumPy (Numeric Python) Basics
+What it is: A foundational Python package for fast, efficient numerical computations.
+
+NumPy Arrays vs. Python Lists: * Arrays must contain only one single data type (e.g., all floats or all integers).
+
+They are significantly faster and more memory-efficient than lists because they are stored contiguously in memory (written in C).
+
+Vectorization: You can perform element-wise mathematical operations on entire arrays at once without writing slow for loops (e.g., array1 + array2).
+
+Array Creation & Manipulation
+Creating an array: np.array([1, 2, 3])
+
+Generating random data: np.random.normal(mean, standard_deviation, size) creates an array of a specific size following a bell-curve distribution.
+
+Combining arrays: np.column_stack((array1, array2)) merges 1D arrays into a 2D matrix. Crucial rule: The input arrays must have the exact same number of elements.
+
+Subsetting (Extracting Data)
+Works exactly like standard Python list slicing using square brackets []:
+
+my_array[0]: Grabs the first element.
+
+my_array[-1]: Grabs the last element.
+
+my_array[1:4]: Grabs a slice of elements (from index 1 up to, but not including, index 4).
+
+Core Statistical Functions
+np.mean(): Calculates the arithmetic average. Warning: Highly sensitive to extreme outliers.
+
+np.median(): Finds the exact middle value of sorted data. Best choice when your dataset has extreme outliers.
+
+np.std(): Calculates the Standard Deviation. Measures how spread out the data is from the mean (low = tight cluster, high = wide spread).
+
+np.corrcoef(): Calculates the Correlation between two sets of data. Returns a matrix showing relationships from -1.0 (perfect negative) to 1.0 (perfect positive).
+
+np_height1 = np.round(np.random.normal(1.75, 0.20, 5000), 2)
+np_weight1 = np.round(np.random.normal(60.32, 15.00, 5000), 2)
+
+np_city = np.column_stack((np_height1, np_weight1))
+print(np_city)
+Example:
+np_mean = np.mean(np_city[:, 0])
+np_median = np.median(np_city[:, 0])
+np_standard_dev = np.std(np_city[:, 0])
+np_correlation = np.corrcoef(np_city[:, 0], np_city[:, 1])
+print(np_mean)  
+print(np_median)
+print(np_standard_dev)
+print(np_correlation)
